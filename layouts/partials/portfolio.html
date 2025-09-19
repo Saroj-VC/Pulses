@@ -1,0 +1,42 @@
+{{/* --- The ONE and ONLY Homepage Header (defined here) --- */}}
+<header class="intro-header" style="background-image: url('{{ .Site.Params.header_image | relURL }}')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading">
+                    <h1>{{ .Title }}</h1> <hr class="small">
+                    <span class="subheading">{{ .Params.subtitle }}</span> </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+{{/* --- Your Custom Homepage Content (from content/_index.md) --- */}}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            {{ .Content }}
+        </div>
+    </div>
+</div>
+
+{{/* --- Project Leader Section (Your custom image and text) --- */}}
+<div class="container" style="margin-top: 40px; margin-bottom: 40px;">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            {{ partial "leader-section.html" . }}
+        </div>
+    </div>
+</div>
+
+{{/* --- Theme's Original Post Listing (Optional) --- */}}
+{{/* If you DO NOT want posts on your homepage, DELETE this entire block.
+     If you want posts, keep this block as is. */}}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            {{ $paginator := .Paginate (where (where .Site.Pages "Type" "post") "IsPage" true) }}
+            {{ partial "posts.html" . }}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="team-member-container">
+    <div class="team-member-photo">
+        {{ with .Get "photo" }}
+            <img src="{{ . | relURL }}" alt="{{ $.Get "name" }}" class="img-responsive team-photo">
+        {{ end }}
+    </div>
+    <div class="team-member-details">
+        <h4>{{ .Get "name" }}</h4>
+        <p class="text-muted">{{ .Get "role" }}</p>
+        {{ with .Get "edu" }}<div class="team-detail-line">{{ . }}</div>{{ end }}
+        {{ with .Get "org" }}<div class="team-detail-line">{{ . }}</div>{{ end }}
+        {{ with .Get "location" }}<div class="team-detail-line">{{ . }}</div>{{ end }}
+        {{ with .Get "email" }}<div class="team-detail-line"><a href="mailto:{{ . }}">{{ . }}</a></div>{{ end }}
+        {{ with .Get "mobile" }}<div class="team-detail-line">{{ . }}</div>{{ end }}
+        {{ with .Get "bio" }}<div class="team-detail-line team-bio">{{ . }}</div>{{ end }}
+    </div>
+    <div class="clearfix"></div>
+</div>
+<hr>

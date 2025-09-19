@@ -1,0 +1,19 @@
+{{ define "main" }}
+  <main aria-role="main">
+    <header>
+      <h1>{{ .Title }}</h1>
+    </header>
+    <div class="content">
+      {{ .Content }}
+
+      {{ if .Site.Params.search }}
+      <div class="search-container">
+          <input id="search-query" type="search" placeholder="Type to search..." autocomplete="off">
+          <div id="search-results"></div>
+      </div>
+      <script src="https://unpkg.com/lunr/lunr.js"></script>
+      <script src="/js/search.js"></script> {{ end }}
+
+    </div>
+  </main>
+{{ end }}

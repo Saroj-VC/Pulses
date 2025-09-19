@@ -1,0 +1,56 @@
+baseURL = "http://localhost:1313/"
+languageCode = "en-us"
+title = "Agri-food Value Chain Management"
+theme = "hugo-theme-cleanwhite"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[params]
+  header_image = "images/home.jpg"
+  search = true
+  # search_engine = "lunr" # Keep this commented unless specifically needed by theme docs
+
+  [[params.additional_menus]]
+    title = "About Us"
+    href = "/about-us/"
+    weight = 10
+
+  [[params.additional_menus]]
+    title = "Project"
+    href = "/project/"
+    weight = 40
+
+  [[params.additional_menus]]
+    title = "Publication"
+    href = "/publication/"
+    weight = 30
+
+  [[params.additional_menus]]
+    title = "Gallery"
+    href = "/gallery/"
+    weight = 50
+
+  [[params.additional_menus]]
+    title = "Event"
+    href = "/event/"
+    weight = 60
+
+  [[params.additional_menus]]
+    title = "Contact"
+    href = "/contact/"
+    weight = 70
+
+[menu]
+  [[menu.main]]
+    identifier = "homepage-link"
+    name = "Home"
+    url = "/"
+    weight = 1
+
+# This is the crucial markup section for Markdown rendering
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      # Allows raw HTML and Go template syntax in Markdown
+      unsafe = true
