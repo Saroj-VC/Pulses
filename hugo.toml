@@ -54,3 +54,4 @@ theme = ["hugo-theme-cleanwhite"]
     [markup.goldmark.renderer]
       # Allows raw HTML and Go template syntax in Markdown
       unsafe = true
+      publishDir = "public"
