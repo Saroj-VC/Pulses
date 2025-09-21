@@ -1,7 +1,8 @@
 baseURL = "https://Saroj-VC.github.io/Pulses/"
 languageCode = "en-us"
 title = "Agri-food Value Chain Management"
-theme = ["hugo-theme-cleanwhite"]
+theme = "hugo-theme-cleanwhite"
+publishDir = "public"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
@@ -54,4 +55,3 @@ theme = ["hugo-theme-cleanwhite"]
     [markup.goldmark.renderer]
       # Allows raw HTML and Go template syntax in Markdown
       unsafe = true
-      publishDir = "public"
