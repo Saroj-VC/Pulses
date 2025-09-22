@@ -10,13 +10,18 @@ description: "Learn more about our team and the Pulses Value Chain Management Pr
 ### Overview
 This project aims to develop socially inclusive and competitive value chains of chickpeas, lentils, and mung beans in Pakistan's Punjab and Sindh provinces, with spillover effects to Khyber Pakhtunkhwa.
 
-### Team (summary)
-- Dr. Rajendra Adhikari — Project Leader, School of Agriculture and Food Sustainability (AGFS), UQ.
-- A/Prof Burhan Ahmad — Country Lead (Pakistan), University of Agriculture Faisalabad (UAF).
-- Emeritus Prof Ray Collins — UQ.
-- Emeritus Prof Kuntala Lahiri-Dutt — ANU.
-- Prof Mubashir Mehdi — Director, BIAEC (MNSUAM).
-- Dr. Saroj Amgai — Research Assistant, UQ.
-- Mr. Khem Raj Joshi — PhD Candidate, UQ.
+---
 
-*(We’ll add profile cards after the site is live.)*
+### Our Team
+
+{{< team_member
+    photo="images/rajendra1.jpg"
+    name="Dr. Rajendra Adhikari"
+    role="Project Leader"
+    edu="PhD (Agribusiness Management)"
+    org="School of Agriculture and Food Sustainability (AGFS)"
+    location="The University of Queensland, Brisbane QLD 4072 Australia"
+    email="r.adhikari@uq.edu.au"
+    mobile="+61 428675381"
+    bio="Dr. Rajendra Adhikari is a leading expert in agricultural value chain development with over 20 years of experience. His work focuses on sustainable farming practices and empowering local communities."
+>}}
