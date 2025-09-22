@@ -83,3 +83,6 @@ This project aims to develop socially inclusive and competitive value chains of 
 >}}
 
 ![Team test image](/images/home.jpg)
+
+![Team test](https://saroj-vc.github.io/Pulses/images/home.jpg)
+
