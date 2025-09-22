@@ -28,7 +28,7 @@ This project aims to develop socially inclusive and competitive value chains of 
 {{< team_member
     photo="images/burhan.jpg"
     name="Associate Professor Burhan Ahmad"
-    role="Project country leader of Pakistan"
+    role="Project country leader from Pakistan"
     org="University of Agriculture Faisalabad (UAF)"
     email="burhan.ahmad@uaf.edu.pk"
     bio="Associate Professor with a PhD in international trade and marketing. Research focuses on agricultural value chains, market functioning, FDI, and consumer behaviour."
