@@ -12,7 +12,7 @@ canonifyURLs = true
   home = ["HTML", "RSS", "JSON"]
 
 [params]
-  header_image = "img/home-bg.jpg"
+  header_image = "https://saroj-vc.github.io/Pulses/img/home-bg.jpg"
   search = true
   # search_engine = "lunr" # Keep this commented unless needed
 
