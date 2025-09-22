@@ -1,3 +1,16 @@
-{{ define "main" }}
-    {{ partial "portfolio.html" . }}
+﻿{{ define "top" }}
+  {{/* Use absolute URL so the hero works under /Pulses/ */}}
+  {{ $img := .Site.Params.header_image | default "img/home-bg.jpg" }}
+  <header class="intro-header" style="background-image: url('{{ $img | absURL }}')">
+    <div class="container">
+      <div class="row">
+        <div class="site-heading">
+          <h1>{{ .Site.Title }}</h1>
+          {{ with .Site.Params.subtitle }}
+            <span class="subheading">{{ . }}</span>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </header>
 {{ end }}
