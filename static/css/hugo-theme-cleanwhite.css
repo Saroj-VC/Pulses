@@ -1,0 +1,7 @@
+
+/* Force the homepage hero background */
+.intro-header {
+  background-image: url("/img/home-bg.jpg") !important;
+  background-size: cover !important;
+  background-position: center center !important;
+}
