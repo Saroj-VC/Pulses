@@ -1,4 +1,4 @@
-baseURL = "https://Saroj-VC.github.io/Pulses/"
+﻿baseURL = "https://Saroj-VC.github.io/Pulses/"
 languageCode = "en-us"
 title = "Agri-food Value Chain Management"
 theme = "hugo-theme-cleanwhite"
@@ -12,7 +12,7 @@ canonifyURLs = true
   home = ["HTML", "RSS", "JSON"]
 
 [params]
-  header_image = "images/home.jpg"
+  header_image = "img/home-bg.jpg"
   search = true
   # search_engine = "lunr" # Keep this commented unless needed
 
