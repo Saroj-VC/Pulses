@@ -4,3 +4,4 @@
   background-size: cover !important;
   background-position: center center !important;
 }
+body{outline:6px solid red !important;}
