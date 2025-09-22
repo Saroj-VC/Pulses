@@ -4,6 +4,10 @@ title = "Agri-food Value Chain Management"
 theme = "hugo-theme-cleanwhite"
 publishDir = "public"
 
+# Make links work on GitHub Pages project sites (e.g., /Pulses/)
+relativeURLs = true
+canonifyURLs = true
+
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
@@ -14,39 +18,39 @@ publishDir = "public"
 
   [[params.additional_menus]]
     title = "About Us"
-    href = "/about-us/"
+    href = "about-us/"
     weight = 10
 
   [[params.additional_menus]]
     title = "Project"
-    href = "/project/"
+    href = "project/"
     weight = 40
 
   [[params.additional_menus]]
     title = "Publication"
-    href = "/publication/"
+    href = "publication/"
     weight = 30
 
   [[params.additional_menus]]
     title = "Gallery"
-    href = "/gallery/"
+    href = "gallery/"
     weight = 50
 
   [[params.additional_menus]]
     title = "Event"
-    href = "/event/"
+    href = "event/"
     weight = 60
 
   [[params.additional_menus]]
     title = "Contact"
-    href = "/contact/"
+    href = "contact/"
     weight = 70
 
 [menu]
   [[menu.main]]
     identifier = "homepage-link"
     name = "Home"
-    url = "/"
+    url = ""        # was "/"; empty means use site root (baseURL)
     weight = 1
 
 [markup]
