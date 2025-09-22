@@ -26,8 +26,11 @@ jobs:
           tar -C ${{ runner.temp }} -xzf ${{ runner.temp }}/hugo.tar.gz
           echo "${{ runner.temp }}" >> $GITHUB_PATH
 
-      - name: Checkout repository
+      - name: Checkout repository (no submodules)
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: false
 
       - name: Setup Pages
         id: pages
@@ -38,10 +41,8 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
-          hugo \
-            --gc \
-            --baseURL "${{ steps.pages.outputs.base_url }}" \
-            --destination "${{ steps.pages.outputs.base_path }}"
+          # Use a relative output directory 'public' to avoid permission issues
+          hugo --gc --baseURL "${{ steps.pages.outputs.base_url }}" --destination public
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
