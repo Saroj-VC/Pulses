@@ -2,7 +2,7 @@
   <div class="row g-0">
     <div class="col-md-3" style="padding:12px;">
       {{- with .Get "photo" -}}
-      <img src="{{ . | relURL }}" alt="{{ $.Get "name" }}" class="img-fluid rounded">
+      <img src="{{ . | absURL }}" alt="{{ $.Get "name" }}" class="img-fluid rounded">
       {{- end -}}
     </div>
     <div class="col-md-9">
