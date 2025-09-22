@@ -81,3 +81,5 @@ This project aims to develop socially inclusive and competitive value chains of 
     email="k.joshi@student.uq.edu.au"
     bio="15 years with Nepal’s Ministry of Agriculture; MPhil in Agribusiness Management (UQ), specializing in value chains."
 >}}
+
+![Team test image](/images/home.jpg)
