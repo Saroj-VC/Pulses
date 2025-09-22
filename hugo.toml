@@ -2,7 +2,7 @@ baseURL = "https://Saroj-VC.github.io/Pulses/"
 languageCode = "en-us"
 title = "Agri-food Value Chain Management"
 theme = "hugo-theme-cleanwhite"
-publishDir = "public"
+publishDir = "Pulses"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
