@@ -10,7 +10,7 @@ publishDir = "public"
 [params]
   header_image = "images/home.jpg"
   search = true
-  # search_engine = "lunr"
+  # search_engine = "lunr" # Keep this commented unless needed
 
   [[params.additional_menus]]
     title = "About Us"
