@@ -1,15 +1,27 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
-{{ partial "head.html" . }}
-<body>
-{{ partial "nav.html" . }}
+  {{ partial "head.html" . }}
+  {{ partial "nav.html" . }}
+  {{/* Show hero header only on homepage */}}
+  {{ if .IsHome }}
+    {{ $img := .Site.Params.header_image | default "img/home-bg.jpg" }}
+    <header class="intro-header" style="background-image: url('{{ $img | absURL }}')">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="site-heading">
+              <h1>{{ .Site.Title }}</h1>
+              {{ with .Site.Params.slogan }}
+                <span class="subheading">{{ . }}</span>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  {{ end }}
 
-{{ block "header" . }}
-{{ end }}
+  {{ block "main" . }}{{ end }}
 
-{{ block "main" . }}
-{{ end }}
-
-{{ partial "footer.html" . }}
-</body>
+  {{ partial "footer.html" . }}
 </html>
