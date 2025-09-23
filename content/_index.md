@@ -40,3 +40,32 @@ The Pulses Value Chain Management Project is dedicated to:
 }
 </style>
 
+
+<style>
+/* Darken the hero slightly so white text is readable */
+.intro-header{position:relative;}
+.intro-header::before{
+  content:"";
+  position:absolute; inset:0;
+  background: rgba(0,0,0,.45);  /* adjust 0.30–0.60 if you want lighter/darker */
+}
+
+/* Ensure headings render above the overlay and are crisp */
+.intro-header .site-heading,
+.intro-header .post-heading{ position:relative; z-index:1; }
+.intro-header .site-heading h1,
+.intro-header .subheading{
+  text-shadow: 0 2px 6px rgba(0,0,0,.55);
+}
+
+/* Optional: give the top navbar a soft translucent background over the image */
+.navbar-custom{
+  background: rgba(0,0,0,.30);
+  backdrop-filter: saturate(120%) blur(2px);
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .nav li a{
+  text-shadow: 0 1px 3px rgba(0,0,0,.6);
+}
+</style>
+
