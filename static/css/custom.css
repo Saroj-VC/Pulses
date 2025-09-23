@@ -16,3 +16,21 @@ body{outline:6px solid red !important;}
 .intro-header .post-heading {
   padding: 120px 0 100px 0; /* ensure text sits inside the hero */
 }
+.intro-header{
+  background-image: url('/img/home-bg.jpg') !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  min-height: 560px; /* increase if you want a taller hero */
+}
+.intro-header .site-heading,
+.intro-header .post-heading{
+  position: relative;
+  z-index: 1;
+  padding: 140px 0 120px 0; /* centers slogan vertically */
+}
+.intro-header::before{
+  content:"";
+  position:absolute; inset:0;
+  background: rgba(0,0,0,.35); /* keep text readable; tweak 0.25–0.5 as you like */
+}
