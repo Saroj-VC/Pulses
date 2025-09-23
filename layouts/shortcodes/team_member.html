@@ -1,31 +1,38 @@
-﻿<div class="container my-4" style="max-width: 980px;">
-  <div class="row g-3 align-items-center" style="margin:0;">
-    <!-- Photo -->
-    <div class="col-md-3 col-12 text-center">
-      {{- with .Get "photo" -}}
-      <img
-        src="{{ . | absURL }}"
-        alt="{{ $.Get "name" }}"
-        class="rounded-circle border shadow-sm"
-        style="width:180px; height:180px; object-fit:cover; margin:auto;"
-      >
-      {{- end -}}
-    </div>
+﻿<style>
+/* Scopes only to this shortcode via the unique class */
+.tm-card{display:flex;gap:18px;align-items:flex-start;max-width:980px;margin:22px auto;padding:16px 18px;border:1px solid #e8e8e8;border-radius:14px;background:#fff;box-shadow:0 6px 18px rgba(0,0,0,.06)}
+.tm-photo{flex:0 0 200px;height:200px;border-radius:50%;overflow:hidden;border:1px solid #e5e5e5;background:#fff}
+.tm-photo img{width:100%;height:100%;object-fit:contain;/* no crop, no stretch */}
+.tm-body{flex:1;min-width:240px}
+.tm-name{margin:2px 0 6px 0;font-weight:600}
+.tm-role{margin:0 0 10px 0;color:#666}
+.tm-list{margin:0 0 12px 18px;padding:0;line-height:1.55}
+@media (max-width: 768px){
+  .tm-card{flex-direction:column;align-items:center;text-align:left}
+  .tm-body{width:100%}
+  .tm-photo{flex:0 0 180px;height:180px}
+}
+</style>
 
-    <!-- Details -->
-    <div class="col-md-9 col-12">
-      <h3 class="h4 mb-1">{{ .Get "name" }}</h3>
-      {{ with .Get "role" }}<div class="text-muted mb-2"><em>{{ . }}</em></div>{{ end }}
+<div class="tm-card">
+  <div class="tm-photo">
+    {{ with .Get "photo" }}
+      <img src="{{ . | absURL }}" alt="{{ $.Get "name" }}">
+    {{ end }}
+  </div>
 
-      <ul class="mb-2" style="margin:0 0 12px 18px; padding:0; line-height:1.6;">
-        {{ with .Get "edu" }}<li><strong>Education:</strong> {{ . }}</li>{{ end }}
-        {{ with .Get "org" }}<li><strong>Organisation:</strong> {{ . }}</li>{{ end }}
-        {{ with .Get "location" }}<li><strong>Location:</strong> {{ . }}</li>{{ end }}
-        {{ with .Get "email" }}<li><strong>Email:</strong> <a href="mailto:{{ . }}">{{ . }}</a></li>{{ end }}
-        {{ with .Get "mobile" }}<li><strong>Mobile:</strong> {{ . }}</li>{{ end }}
-      </ul>
+  <div class="tm-body">
+    <h3 class="tm-name">{{ .Get "name" }}</h3>
+    {{ with .Get "role" }}<div class="tm-role"><em>{{ . }}</em></div>{{ end }}
 
-      {{ with .Get "bio" }}<p class="mb-0">{{ . }}</p>{{ end }}
-    </div>
+    <ul class="tm-list">
+      {{ with .Get "edu" }}<li><strong>Education:</strong> {{ . }}</li>{{ end }}
+      {{ with .Get "org" }}<li><strong>Organisation:</strong> {{ . }}</li>{{ end }}
+      {{ with .Get "location" }}<li><strong>Location:</strong> {{ . }}</li>{{ end }}
+      {{ with .Get "email" }}<li><strong>Email:</strong> <a href="mailto:{{ . }}">{{ . }}</a></li>{{ end }}
+      {{ with .Get "mobile" }}<li><strong>Mobile:</strong> {{ . }}</li>{{ end }}
+    </ul>
+
+    {{ with .Get "bio" }}<p style="margin:0">{{ . }}</p>{{ end }}
   </div>
 </div>
