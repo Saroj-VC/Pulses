@@ -1,0 +1,43 @@
+﻿[menu]
+
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About Us"
+    url = "/about-us/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "publication"
+    name = "Publication"
+    url = "/publication/"
+    weight = 30
+
+  [[menu.main]]
+    identifier = "project"
+    name = "Project"
+    url = "/project/"
+    weight = 40
+
+  [[menu.main]]
+    identifier = "gallery"
+    name = "Gallery"
+    url = "/gallery/"
+    weight = 50
+
+  [[menu.main]]
+    identifier = "event"
+    name = "Event"
+    url = "/event/"
+    weight = 60
+
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 70
