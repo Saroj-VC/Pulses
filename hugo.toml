@@ -1,11 +1,11 @@
-baseURL = "https://Saroj-VC.github.io/Pulses/"
+﻿baseURL = "https://Saroj-VC.github.io/Pulses/"
 languageCode = "en-us"
 title = "Agri-food Value Chain Management"
 theme = "hugo-theme-cleanwhite"
 publishDir = "public"
 
 # Make links work on GitHub Pages project sites (e.g., /Pulses/)
-relativeURLs = true
+relativeURLs = false
 canonifyURLs = true
 
 [outputs]
