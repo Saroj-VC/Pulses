@@ -1,11 +1,11 @@
-baseURL = "https://Saroj-VC.github.io/Pulses/"
+﻿baseURL = "https://Saroj-VC.github.io/Pulses/"
 languageCode = "en-us"
 title = "Agri-food Value Chain Management"
 theme = "hugo-theme-cleanwhite"
 publishDir = "public"
 
 # Make links work on GitHub Pages project sites (e.g., /Pulses/)
-relativeURLs = false
+relativeURLs = true
 canonifyURLs = true
 
 [outputs]
@@ -13,6 +13,7 @@ canonifyURLs = true
 
 [params]
   header_image = "img/home-bg.jpg"
+   slogan = "Developing competitive and inclusive value chains of pulses in Pakistan"
   search = true
   # search_engine = "lunr" # Keep this commented unless needed
 
