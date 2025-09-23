@@ -29,3 +29,14 @@ The Pulses Value Chain Management Project is dedicated to:
 * Discover upcoming **[Events](/event/)**
 * View our **[Gallery](/gallery/)**
 * **[Contact Us](/contact/)** for inquiries
+<!-- Force homepage hero background -->
+<style>
+.intro-header{
+  background-image: url("https://saroj-vc.github.io/Pulses/img/home-bg.jpg") !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  min-height: 420px;
+}
+</style>
+
