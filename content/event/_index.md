@@ -20,4 +20,4 @@ Join us for our next major event.
 
 ---
 
-Browse the full list of events below:
+Browse the full list of events below.
