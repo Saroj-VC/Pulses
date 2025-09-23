@@ -1,20 +1,23 @@
 ﻿<div class="container my-4" style="max-width: 980px;">
-  <div class="row g-3 align-items-start" style="margin:0;">
-    <div class="col-md-3 col-12">
+  <div class="row g-3 align-items-center" style="margin:0;">
+    <!-- Photo -->
+    <div class="col-md-3 col-12 text-center">
       {{- with .Get "photo" -}}
       <img
         src="{{ . | absURL }}"
         alt="{{ $.Get "name" }}"
-        class="img-fluid rounded border"
-        style="width:100%; height:auto; max-height:320px;"
+        class="rounded-circle border shadow-sm"
+        style="width:180px; height:180px; object-fit:cover; margin:auto;"
       >
       {{- end -}}
     </div>
-    <div class="col-md-9 col-12">
-      <h3 class="h4 mb-1" style="margin-top:4px;">{{ .Get "name" }}</h3>
-      {{ with .Get "role" }}<div class="text-muted mb-2">{{ . }}</div>{{ end }}
 
-      <ul class="mb-2" style="margin:0 0 12px 18px; padding:0; line-height:1.5;">
+    <!-- Details -->
+    <div class="col-md-9 col-12">
+      <h3 class="h4 mb-1">{{ .Get "name" }}</h3>
+      {{ with .Get "role" }}<div class="text-muted mb-2"><em>{{ . }}</em></div>{{ end }}
+
+      <ul class="mb-2" style="margin:0 0 12px 18px; padding:0; line-height:1.6;">
         {{ with .Get "edu" }}<li><strong>Education:</strong> {{ . }}</li>{{ end }}
         {{ with .Get "org" }}<li><strong>Organisation:</strong> {{ . }}</li>{{ end }}
         {{ with .Get "location" }}<li><strong>Location:</strong> {{ . }}</li>{{ end }}
