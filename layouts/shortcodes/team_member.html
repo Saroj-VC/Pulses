@@ -1,23 +1,20 @@
-﻿<div class="team-card" style="
-  max-width: 980px; margin: 24px auto; border: 1px solid #e5e5e5;
-  border-radius: 14px; overflow: hidden; background: #fff;
-  box-shadow: 0 6px 18px rgba(0,0,0,.06);
-">
-  <div class="row" style="margin:0;">
-    <div class="col-sm-3 col-xs-12" style="padding:0;">
+﻿<div class="container my-4" style="max-width: 980px;">
+  <div class="row g-3 align-items-start" style="margin:0;">
+    <div class="col-md-3 col-12">
       {{- with .Get "photo" -}}
       <img
         src="{{ . | absURL }}"
         alt="{{ $.Get "name" }}"
-        style="display:block; width:100%; height:100%; object-fit:cover; min-height:220px; max-height:280px;"
+        class="img-fluid rounded border"
+        style="width:100%; height:auto; max-height:320px;"
       >
       {{- end -}}
     </div>
-    <div class="col-sm-9 col-xs-12" style="padding:20px 22px;">
-      <h3 style="margin:0 0 6px 0; font-weight:600;">{{ .Get "name" }}</h3>
-      {{ with .Get "role" }}<div class="text-muted" style="margin:0 0 10px 0;">{{ . }}</div>{{ end }}
+    <div class="col-md-9 col-12">
+      <h3 class="h4 mb-1" style="margin-top:4px;">{{ .Get "name" }}</h3>
+      {{ with .Get "role" }}<div class="text-muted mb-2">{{ . }}</div>{{ end }}
 
-      <ul style="margin:0 0 12px 18px; padding:0; line-height:1.5;">
+      <ul class="mb-2" style="margin:0 0 12px 18px; padding:0; line-height:1.5;">
         {{ with .Get "edu" }}<li><strong>Education:</strong> {{ . }}</li>{{ end }}
         {{ with .Get "org" }}<li><strong>Organisation:</strong> {{ . }}</li>{{ end }}
         {{ with .Get "location" }}<li><strong>Location:</strong> {{ . }}</li>{{ end }}
@@ -25,7 +22,7 @@
         {{ with .Get "mobile" }}<li><strong>Mobile:</strong> {{ . }}</li>{{ end }}
       </ul>
 
-      {{ with .Get "bio" }}<p style="margin:0;">{{ . }}</p>{{ end }}
+      {{ with .Get "bio" }}<p class="mb-0">{{ . }}</p>{{ end }}
     </div>
   </div>
 </div>
