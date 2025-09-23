@@ -1,11 +1,11 @@
-baseURL = "https://Saroj-VC.github.io/Pulses/"
+﻿baseURL = "https://Saroj-VC.github.io/Pulses/"
 languageCode = "en-us"
 title = "Agri-food Value Chain Management"
 theme = "hugo-theme-cleanwhite"
 publishDir = "public"
 
-# Make links work on GitHub Pages project sites (e.g., /Pulses/)
-relativeURLs = true
+# Use absolute URLs so assets work on every page
+relativeURLs = false
 canonifyURLs = true
 
 [outputs]
@@ -13,39 +13,8 @@ canonifyURLs = true
 
 [params]
   header_image = "img/home-bg.jpg"
-   slogan = "Developing competitive and inclusive value chains of pulses in Pakistan"
+  slogan = "Developing competitive and inclusive value chains of pulses in Pakistan"
   search = true
-  # search_engine = "lunr" # Keep this commented unless needed
-
-  [[params.additional_menus]]
-    title = "About Us"
-    href = "about-us/"
-    weight = 10
-
-  [[params.additional_menus]]
-    title = "Project"
-    href = "project/"
-    weight = 40
-
-  [[params.additional_menus]]
-    title = "Publication"
-    href = "publication/"
-    weight = 30
-
-  [[params.additional_menus]]
-    title = "Gallery"
-    href = "gallery/"
-    weight = 50
-
-  [[params.additional_menus]]
-    title = "Event"
-    href = "event/"
-    weight = 60
-
-  [[params.additional_menus]]
-    title = "Contact"
-    href = "contact/"
-    weight = 70
 
 [menu]
   [[menu.main]]
@@ -89,54 +58,6 @@ canonifyURLs = true
     name = "Contact"
     url = "/contact/"
     weight = 70
-
-  [[menu.main]]
-    identifier = "home"
-    name = "Home"
-    url = "/"
-    weight = 1
-
-  [[menu.main]]
-    identifier = "about"
-    name = "About Us"
-    url = "/about-us/"
-    weight = 10
-
-  [[menu.main]]
-    identifier = "publication"
-    name = "Publication"
-    url = "/publication/"
-    weight = 30
-
-  [[menu.main]]
-    identifier = "project"
-    name = "Project"
-    url = "/project/"
-    weight = 40
-
-  [[menu.main]]
-    identifier = "gallery"
-    name = "Gallery"
-    url = "/gallery/"
-    weight = 50
-
-  [[menu.main]]
-    identifier = "event"
-    name = "Event"
-    url = "/event/"
-    weight = 60
-
-  [[menu.main]]
-    identifier = "contact"
-    name = "Contact"
-    url = "/contact/"
-    weight = 70
-
-  [[menu.main]]
-    identifier = "homepage-link"
-    name = "Home"
-    url = ""        # was "/"; empty means use site root (baseURL)
-    weight = 1
 
 [markup]
   [markup.goldmark]
