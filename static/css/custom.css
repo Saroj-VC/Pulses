@@ -52,3 +52,15 @@ body{outline:6px solid red !important;}
   position:absolute; inset:0;
   background: rgba(0,0,0,.35); /* keep text readable; tweak 0.25–0.5 as you like */
 }
+/* Keep nav readable over images */
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-brand {
+  text-shadow: 0 1px 2px rgba(0,0,0,.5);
+}
+
+/* Improve hero text readability */
+.intro-header::before{
+  content:"";
+  position:absolute; inset:0;
+  background: linear-gradient(to bottom, rgba(0,0,0,.35), rgba(0,0,0,.35));
+}
