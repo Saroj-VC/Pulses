@@ -47,7 +47,7 @@ The Pulses Value Chain Management Project is dedicated to:
 .intro-header::before{
   content:"";
   position:absolute; inset:0;
-  background: rgba(0,0,0,.45);  /* adjust 0.30–0.60 if you want lighter/darker */
+  background: rgba(0,0,0,.45);  /* adjust 0.30ï¿½0.60 if you want lighter/darker */
 }
 
 /* Ensure headings render above the overlay and are crisp */

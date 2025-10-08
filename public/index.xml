@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Developing competitive and inclusive value chains of pulses in Pakistan on Agri-food Value Chain Management</title>
-    <link>http://localhost:1313/</link>
+    <link>http://localhost:1313/Pulses/</link>
     <description>Recent content in Developing competitive and inclusive value chains of pulses in Pakistan on Agri-food Value Chain Management</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 11 Jul 2025 19:20:00 +1000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/Pulses/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Search Results</title>
-      <link>http://localhost:1313/search/</link>
+      <link>http://localhost:1313/Pulses/search/</link>
       <pubDate>Fri, 11 Jul 2025 19:20:00 +1000</pubDate>
-      <guid>http://localhost:1313/search/</guid>
+      <guid>http://localhost:1313/Pulses/search/</guid>
       <description>This page displays search results from our website.</description>
     </item>
     <item>
       <title>Contact Us</title>
-      <link>http://localhost:1313/contact/</link>
+      <link>http://localhost:1313/Pulses/contact/</link>
       <pubDate>Fri, 11 Jul 2025 19:15:00 +1000</pubDate>
-      <guid>http://localhost:1313/contact/</guid>
+      <guid>http://localhost:1313/Pulses/contact/</guid>
       <description>Get In Touch We&amp;rsquo;d love to hear from you! Whether you have questions about our project, want to collaborate, or need more information about pulses value chain management in Pakistan, please feel free to reach out using the details below.&#xA;Personal Details Name: Dr. Rajendra Adhikari&#xA;Email: r.adhikari@uq.edu.au Primary: r.adhikari@uq.edu.au Secondary: burhan_uaf@hotmail.com Contact Number:&#xA;Mobile: +61 428675381 Office: +61 7 54601 220 Connect Online LinkedIn Profile:&#xA;linkedin.com/in/rajendra-adhikari-5b5b4431 Facebook Profile/Page:&#xA;[Follow us on Facebook] WhatsApp Link:</description>
     </item>
   </channel>
