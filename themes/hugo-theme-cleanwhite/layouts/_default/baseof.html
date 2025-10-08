@@ -4,14 +4,16 @@
   <body>
     {{ partial "nav.html" . }}
 
+    <!-- Hero Header (Home Page Only) -->
     {{ if .IsHome }}
       {{ $img := .Site.Params.header_image | default "img/home-bg.jpg" }}
-      <header class="intro-header" style="background-image: url('{{ $img | absURL }}')">
+      <header class="intro-header" style="background-image: url('{{ $img | absURL }}'); background-size: cover; background-position: center center;">
+        <div class="overlay"></div>
         <div class="container">
           <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
               <div class="site-heading">
-                <span class="subheading">{{ .Site.Params.slogan }}</span>
+                <h1>{{ .Site.Params.slogan }}</h1>
               </div>
             </div>
           </div>
@@ -19,6 +21,7 @@
       </header>
     {{ end }}
 
+    <!-- Main Content -->
     {{ block "main" . }}{{ end }}
 
     {{ partial "footer.html" . }}
